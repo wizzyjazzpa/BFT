@@ -15,7 +15,7 @@ $('#update_user_info').on('submit',function(e){
      let year = $('#year').val().trim();
      let dob = date+"/"+month+"/"+year;
      let address= $('#address').val().trim();
-    $.post('https://btfd-io.up.railway.app/api/update_user_info',
+    $.post('/api/update_user_info',
         {
              Userid:userid,
              phoneNumber:phoneNumber,

@@ -32,7 +32,7 @@ $(document).ready(function () {
         let deposit_crypto_coin = $('#deposit_coin').val();
         userid =$('#userid').val();
         //alert(amount+""+btc_amount+""+deposit_type+""+deposit_crypto_coin)
-        $.post('https://btfd-io.up.railway.app/api/deposit_crypto',
+        $.post('/api/deposit_crypto',
             {
             Amount:amount,
             crypto_Amount:btc_amount,

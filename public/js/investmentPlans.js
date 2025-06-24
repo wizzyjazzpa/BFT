@@ -40,7 +40,7 @@ let plan;
 			  let number_times = $('#number_times').val();
 			  let percentage_return = $('#Percentage_return').val();
 			 const userid = $('#userid').val();
-			 $.post(`https://btfd-io.up.railway.app/api/getinvestment_plan_amount`,
+			 $.post(`/getinvestment_plan_amount`,
 				{
 					Userid :userid,
                     Min_amount:min_amount,
